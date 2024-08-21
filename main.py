@@ -34,7 +34,7 @@ class MazeGenerator:
     def _place_end(self):
         open_positions = [(x, y) for y in range(self.height) for x in range(self.width) if self.grid[y][x] == 0]
         end_x, end_y = random.choice(open_positions)
-        self.grid[end_y][end_x] = 2
+        self.grid[end_y][end_x] = -1
 
 
 def print_maze(maze):
